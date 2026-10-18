@@ -1,0 +1,62 @@
+openapi: 3.0.1
+info:
+  title: Nager.Date API
+  version: 1.0.0
+  description: API for public holidays and country information.
+servers:
+  - url: https://date.nager.at
+paths:
+  /api/v3/AvailableCountries:
+    get:
+      operationId: getAvailableCountries
+      summary: Get supported countries
+      responses:
+        '200':
+          description: List of supported countries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    countryCode:
+                      type: string
+                    name:
+                      type: string
+  /api/v3/PublicHolidays/{year}/{countryCode}:
+    get:
+      operationId: getPublicHolidays
+      summary: Get public holidays
+      parameters:
+        - name: year
+          in: path
+          required: true
+          schema:
+            type: integer
+        - name: countryCode
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of public holidays
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    date:
+                      type: string
+                      format: date
+                    localName:
+                      type: string
+                    name:
+                      type: string
+                    countryCode:
+                      type: string
+                    global:
+                      type: boolean

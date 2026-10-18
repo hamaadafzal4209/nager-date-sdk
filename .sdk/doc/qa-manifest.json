@@ -1,0 +1,14 @@
+{
+  "files": [
+    "SUMMARY.md"
+  ],
+  "config": ".sdk/doc/qa/vale.ini",
+  "routes": {},
+  "quoted": {
+    "SUMMARY.md": [
+      "API for public holidays and country information.",
+      "List of public holidays",
+      "List of supported countries"
+    ]
+  }
+}

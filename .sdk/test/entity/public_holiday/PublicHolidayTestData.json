@@ -1,0 +1,51 @@
+{
+  "existing": {
+    "public_holiday": {
+      "PUBLIC_HOLIDAY00": {
+        "countryCode": "s32",
+        "date": "s33",
+        "global": true,
+        "localName": "s35",
+        "name": "s36",
+        "country_code": "COUNTRY_CODE01",
+        "year": "YEAR01"
+      },
+      "PUBLIC_HOLIDAY01": {
+        "countryCode": "s64",
+        "date": "s65",
+        "global": true,
+        "localName": "s67",
+        "name": "s68",
+        "country_code": "COUNTRY_CODE01",
+        "year": "YEAR01"
+      },
+      "PUBLIC_HOLIDAY02": {
+        "countryCode": "s96",
+        "date": "s97",
+        "global": true,
+        "localName": "s99",
+        "name": "s9a",
+        "country_code": "COUNTRY_CODE01",
+        "year": "YEAR01"
+      }
+    }
+  },
+  "new": {
+    "public_holiday": {
+      "public_holiday_ref01": {
+        "countryCode": "sc8",
+        "date": "sc9",
+        "global": true,
+        "localName": "scb",
+        "name": "scc"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v3/PublicHolidays/{year}/{countryCode}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

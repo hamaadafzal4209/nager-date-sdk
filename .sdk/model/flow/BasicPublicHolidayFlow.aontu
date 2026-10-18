@@ -1,0 +1,27 @@
+# BasicPublicHolidayFlow
+
+main: kit: flow: BasicPublicHolidayFlow:
+{
+  entity: "public_holiday",
+  kind: "basic",
+  name: "BasicPublicHolidayFlow",
+  step: [
+    {
+      m: {
+        country_code: "country_code01",
+        year: "year01"
+      }
+
+      o: "list",
+      v: [
+        {
+          apply: "ItemExists",
+          def: {
+            ref: "public_holiday_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicPublicHolidayFlow"
+}

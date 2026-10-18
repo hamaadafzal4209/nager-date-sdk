@@ -1,0 +1,21 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      description: "API for public holidays and country information."
+      servers: [
+        {
+          url: "https://date.nager.at"
+        }
+      ]
+      summary: "API for public holidays and country information."
+      title: "Nager.Date API"
+      version: "1.0.0"
+      website: "https://date.nager.at"
+    }
+  }
+}
+

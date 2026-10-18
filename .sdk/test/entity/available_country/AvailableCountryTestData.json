@@ -1,0 +1,33 @@
+{
+  "existing": {
+    "available_country": {
+      "AVAILABLE_COUNTRY00": {
+        "countryCode": "s14",
+        "name": "s15"
+      },
+      "AVAILABLE_COUNTRY01": {
+        "countryCode": "s28",
+        "name": "s29"
+      },
+      "AVAILABLE_COUNTRY02": {
+        "countryCode": "s3c",
+        "name": "s3d"
+      }
+    }
+  },
+  "new": {
+    "available_country": {
+      "available_country_ref01": {
+        "countryCode": "s50",
+        "name": "s51"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/v3/AvailableCountries": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}
